@@ -1,0 +1,32 @@
+.button {
+  background-color: var(--main);
+  color: var(--white);
+  white-space: nowrap;
+  cursor: pointer;
+
+  &.extraSmall {
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  &.small {
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 0 37.5px;
+    height: 61px;
+    line-height: 61px;
+  }
+
+  &.medium {
+    background: yellow;
+  }
+
+  &.large {
+    background: blue;
+  }
+}

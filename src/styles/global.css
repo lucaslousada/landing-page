@@ -1,10 +1,12 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-*, button, input{
+*,
+button,
+input {
   border: 0;
   background: none;
   font-family: 'Manrope', sans-serif;
@@ -14,6 +16,29 @@ footer {
   font-family: 'Inter', sans-serif;
 }
 
-/* :root{
+li {
+  list-style: none;
+}
 
-} */
+a {
+  text-decoration: none;
+}
+
+#root {
+  position: relative;
+}
+
+:root {
+  --main: #f84646;
+  --main-variation-1: #f8464a;
+
+  --white: #ffffff;
+  --placeholder: rgba(0, 0, 0, 0.4);
+
+  --gray: #808080;
+  --gray-light-1: #e5e5e5;
+
+  --black: #000000;
+  --black-light-1: #18191f;
+  --black-light-2: #2e2e2e;
+}

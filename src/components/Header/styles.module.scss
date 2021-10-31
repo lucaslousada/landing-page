@@ -1,0 +1,38 @@
+.header {
+  position: absolute;
+
+  width: 100%;
+  padding: 35px 8.472222%;
+
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    nav ul {
+      display: flex;
+      gap: 40px;
+
+      li {
+        white-space: nowrap;
+
+        a {
+          color: var(--black);
+          font-size: 14px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 975px) {
+  nav {
+    display: none;
+  }
+}
