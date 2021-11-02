@@ -20,10 +20,30 @@
   .content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 96px 116px;
+    gap: 80px 116px;
 
     max-width: 1170px;
     margin: 0px auto;
     padding-top: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .servicesSection {
+    padding: 70px 20px 90px;
+
+    .sectionHeader {
+      > h3 {
+        padding-bottom: 15px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .content {
+      padding-top: 80px;
+    }
   }
 }
