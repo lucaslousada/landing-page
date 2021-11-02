@@ -7,7 +7,7 @@ import figmaLogo from '../../assets/figma-logo.svg';
 import file from '../../assets/file.svg';
 import star from '../../assets/star.svg';
 
-type CardServicesProps = {
+type ServiceCardProps = {
   img: 'chartBar' | 'chartPieSlice' | 'crown' | 'figmaLogo' | 'file' | 'star';
   title: string;
   description: string;
@@ -22,9 +22,9 @@ const images: { [index: string]: string } = {
   star,
 };
 
-export const CardServices: React.FC<CardServicesProps> = ({ img, title, description }) => {
+export const ServiceCard: React.FC<ServiceCardProps> = ({ img, title, description }) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.serviceCard}>
       <img src={images[img]} alt={img} />
       <h4>{title}</h4>
       <p>{description}</p>

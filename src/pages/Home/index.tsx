@@ -1,6 +1,6 @@
 import { Header } from '../../components/Header';
-import { SectionMain } from '../../components/SectionMain';
-import { SectionServices } from '../../components/SectionServices';
+import { MainSection } from '../../components/MainSection';
+import { ServicesSection } from '../../components/ServicesSection';
 
 // import styles from './styles.module.scss';
 
@@ -8,8 +8,8 @@ export const Home: React.FC = () => {
   return (
     <main>
       <Header />
-      <SectionMain />
-      <SectionServices />
+      <MainSection />
+      <ServicesSection />
     </main>
   );
 };

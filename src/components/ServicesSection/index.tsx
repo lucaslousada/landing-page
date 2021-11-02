@@ -1,10 +1,10 @@
 import styles from './styles.module.scss';
 
-import { CardServices } from '../CardServices';
+import { ServiceCard } from '../ServiceCard';
 
-export const SectionServices: React.FC = () => {
+export const ServicesSection: React.FC = () => {
   return (
-    <section className={styles.sectionServices}>
+    <section className={styles.servicesSection}>
       <div className={styles.sectionHeader}>
         <h3>Qualidade e Gestão de Processos</h3>
         <p>
@@ -14,32 +14,32 @@ export const SectionServices: React.FC = () => {
         </p>
       </div>
       <div className={styles.content}>
-        <CardServices
+        <ServiceCard
           img="file"
           title="Döküman Analizi"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."
         />
-        <CardServices
+        <ServiceCard
           img="star"
           title="Aceitação e Avaliação"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."
         />
-        <CardServices
+        <ServiceCard
           img="crown"
           title="Análise de regras de negócios"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."
         />
-        <CardServices
+        <ServiceCard
           img="chartBar"
           title="Diagramas de Fluxo"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."
         />
-        <CardServices
+        <ServiceCard
           img="chartPieSlice"
           title="Análise das partes interessadas"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."
         />
-        <CardServices
+        <ServiceCard
           img="figmaLogo"
           title="Prototipagem"
           description="Ante vulputate ut at accumsan et. Feugiat at tempus, est senectus amet, elementum."

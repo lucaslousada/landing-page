@@ -2,9 +2,9 @@ import { Button } from '../Button';
 
 import styles from './styles.module.scss';
 
-export const SectionMain: React.FC = () => {
+export const MainSection: React.FC = () => {
   return (
-    <section className={styles.sectionMain}>
+    <section className={styles.mainSection}>
       <div className={styles.contentWrapper}>
         <h1>23 anos de experiência em tecnologia</h1>
         <p>
