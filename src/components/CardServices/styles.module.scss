@@ -1,0 +1,19 @@
+.card{
+  text-align: center;
+
+  img {
+    width: 100px;
+    height: 75px;
+    object-fit: contain;
+  }
+
+  h4 {
+    font-weight: 800;
+    font-size: 24px;
+    padding: 15px 0 10px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+}

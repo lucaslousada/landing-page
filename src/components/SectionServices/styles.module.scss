@@ -1,0 +1,29 @@
+.sectionServices {
+  padding: 120px 8.472222% 140px;
+
+  .sectionHeader {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+
+    > h3 {
+      font-weight: 800;
+      font-size: 36px;
+      padding-bottom: 30px;
+    }
+
+    > p {
+      font-size: 24px;
+    }
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 96px 116px;
+
+    max-width: 1170px;
+    margin: 0px auto;
+    padding-top: 90px;
+  }
+}
