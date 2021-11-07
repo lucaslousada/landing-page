@@ -32,6 +32,11 @@
   }
 
   &.large {
-    background: blue;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0 40px;
+    height: 70px;
+    line-height: 70px;
   }
 }

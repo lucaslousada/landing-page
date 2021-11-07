@@ -4,6 +4,7 @@ import { ServicesSection } from '../../components/ServicesSection';
 import { TestSection } from '../../components/TestSection';
 import { MoreAboutTheServiceSection } from '../../components/MoreAboutTheServiceSection';
 import { BusinessPartnersSection } from '../../components/BusinessPartnersSection';
+import { ContactSection } from '../../components/ContactSection';
 
 // import styles from './styles.module.scss';
 
@@ -32,6 +33,7 @@ export const Home: React.FC = () => {
         order="reverse"
       />
       <BusinessPartnersSection />
+      <ContactSection />
     </main>
   );
 };
