@@ -37,8 +37,11 @@ a {
 
   --gray: #808080;
   --gray-light-1: #e5e5e5;
+  --gray-light-2: #F4F5F7;
 
   --black: #000000;
   --black-light-1: #18191f;
   --black-light-2: #2e2e2e;
+
+  --shadow: 0 30px 40px 0 rgba(212, 217, 232, 0.2);
 }
