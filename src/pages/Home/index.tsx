@@ -5,8 +5,7 @@ import { TestSection } from '../../components/TestSection';
 import { MoreAboutTheServiceSection } from '../../components/MoreAboutTheServiceSection';
 import { BusinessPartnersSection } from '../../components/BusinessPartnersSection';
 import { ContactSection } from '../../components/ContactSection';
-
-// import styles from './styles.module.scss';
+import { Footer } from '../../components/Footer';
 
 export const Home: React.FC = () => {
   return (
@@ -34,6 +33,7 @@ export const Home: React.FC = () => {
       />
       <BusinessPartnersSection />
       <ContactSection />
+      <Footer />
     </main>
   );
 };
