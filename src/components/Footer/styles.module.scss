@@ -3,6 +3,14 @@
   padding: 80px 7.2916666% 70px;
   color: var(--white);
 
+  a {
+    transition: filter 0.2s;
+
+    &:hover{
+      filter: brightness(75%);
+    }
+  }
+
   .contentWrapper {
     max-width: 1230px;
     margin: 0 auto;

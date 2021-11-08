@@ -3,6 +3,11 @@
   color: var(--white);
   white-space: nowrap;
   cursor: pointer;
+  transition: filter 0.2s;
+
+  &:hover{
+    filter: brightness(85%);
+  }
 
   &.extraSmall {
     font-size: 14px;
