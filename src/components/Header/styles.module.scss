@@ -27,7 +27,7 @@
           font-weight: 700;
           transition: color 0.2s;
 
-          &:hover{
+          &:hover {
             color: var(--main);
           }
         }
@@ -39,5 +39,11 @@
 @media (max-width: 975px) {
   nav {
     display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .header {
+    padding: 35px 20px;
   }
 }
