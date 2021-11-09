@@ -12,7 +12,12 @@ export const MainSection: React.FC = () => {
           equipe especializada, que oferece altos niveis de qualidade para nossos clientes.
         </p>
         <form className={styles.newsLetter}>
-          <input type="email" name="email" placeholder="Inscreva-se para receber notícias" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Inscreva-se para receber notícias"
+            required
+          />
           <Button type="submit" ButtonStyle="small">
             Inscrever-se
           </Button>
