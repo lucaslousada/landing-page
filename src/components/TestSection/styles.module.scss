@@ -5,19 +5,19 @@
   color: var(--white);
   text-align: center;
 
-  h2 {
-    font-weight: 800;
-    font-size: 48px;
-    padding-bottom: 15px;
-  }
-
-  > p {
-    font-size: 18px;
-  }
-
   .contentWrapper {
     max-width: 1200px;
     margin: 0 auto;
+
+    h2 {
+      font-weight: 800;
+      font-size: 48px;
+      padding-bottom: 15px;
+    }
+
+    > p {
+      font-size: 18px;
+    }
 
     .list {
       display: grid;
@@ -83,16 +83,16 @@
 }
 
 @media (max-width: 768px) {
-  .testSection {
+  .testSection .contentWrapper {
     h2 {
       font-size: 36px;
     }
 
-    p {
-      font-size: 14px;
+    > p {
+      font-size: 16px;
     }
 
-    .contentWrapper .list {
+    .list {
       grid-template-columns: repeat(1, 1fr);
       max-width: 200px;
 
@@ -113,7 +113,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .testSection {
     padding: 50px 20px;
   }

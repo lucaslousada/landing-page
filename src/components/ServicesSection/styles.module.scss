@@ -10,12 +10,12 @@
 
       > h3 {
         font-weight: 800;
-        font-size: 36px;
+        font-size: 48px;
         padding-bottom: 30px;
       }
 
       > p {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
 
@@ -29,7 +29,15 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
+  .servicesSection .contentWrapper .sectionHeader {
+    h3 {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
   .servicesSection {
     padding: 70px 20px 90px;
 
