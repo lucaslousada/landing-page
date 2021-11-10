@@ -5,6 +5,7 @@
   padding: 35px 8.472222%;
 
   .contentWrapper {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -13,6 +14,31 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+
+    .hamburgerIcon {
+      display: none;
+      cursor: pointer;
+      z-index: 2;
+      position: absolute;
+      top: 11px;
+      left: 0;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+
+      &::before,
+      &::after,
+      span {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+        background-color: var(--black);
+        transition: transform 0.3s;
+      }
+    }
 
     nav ul {
       display: flex;
@@ -36,9 +62,72 @@
   }
 }
 
+// Menu Mobile Active
 @media (max-width: 975px) {
-  nav {
-    display: none;
+  .header .contentWrapper {
+    nav {
+      display: none;
+    }
+
+    .hamburgerIcon {
+      display: flex;
+    }
+  }
+
+  .header.active {
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main);
+    transition: background-color 0.3s;
+
+    .contentWrapper {
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+
+      .hamburgerIcon {
+        &::before,
+        &::after {
+          background-color: var(--white);
+        }
+
+        &::before {
+          transform: translate(0px, 8px) rotate(45deg);
+        }
+
+        &::after {
+          transform: translate(0px, -8px) rotate(-45deg);
+        }
+
+        span {
+          visibility: hidden;
+        }
+      }
+
+      nav {
+        display: block;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li a {
+            color: var(--white);
+            transition: filter 0.2s;
+
+            &:hover {
+              filter: brightness(75%);
+            }
+          }
+        }
+      }
+
+      button:last-of-type {
+        background-color: var(--white);
+        color: var(--main);
+      }
+    }
   }
 }
 
